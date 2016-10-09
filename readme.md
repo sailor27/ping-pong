@@ -26,11 +26,11 @@ Ping Pong is a web application that takes a number from a user and returns a ran
 
  Prints each number as it is counted. *
 
- Replace numbers divisible by 3 with "ping"
+ Replace numbers divisible by 3 with "ping" *
 
- Replace numbers divisible by 5 with "pong"
+ Replace numbers divisible by 5 with "pong" *
 
- Replace numbers divisible by 15 with "pingpong"
+ Replace numbers divisible by 15 with "pingpong" *
 
 
 
