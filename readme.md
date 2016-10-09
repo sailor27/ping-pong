@@ -1,7 +1,7 @@
 # Ping Pong
 ### An interactive web application written in javascript
 
-**Access this application on gh-pages: https://sailor27.github.io/portfolio/**
+**Access this application on gh-pages: https://sailor27.github.io/ping-pong/**
 
 Ping Pong is a web application that takes a number from a user and returns a range of numbers from 1 to the chosen number, with the following exceptions:
 
