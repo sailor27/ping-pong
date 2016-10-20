@@ -22,7 +22,7 @@ Ping Pong is a web application that takes a number from a user and returns a ran
 
  ### Specifications:
 
- * Recognize non-number entries.
+* Recognize non-number entries.
   * Input: hello
   * Output: please enter a number
 
