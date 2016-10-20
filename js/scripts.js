@@ -25,8 +25,9 @@ $(document).ready(function() {
     if (isNaN(number) === true) {
       $("#not").text("please enter a number");
     };
-    
+
     countNumber(number);
+
     countedNumbers.forEach(function(number) {
       $("#output").append("<li>" + number + "</li>");
     });
