@@ -23,29 +23,29 @@ Ping Pong is a web application that takes a number from a user and returns a ran
  ### Specifications:
 
  *  Recognize non-number entries.
- ** Input: hello
- ** Output: please enter a number
+   * Input: hello
+   * Output: please enter a number
 
 * Counts up to the provided number
 
-** Input: 2
-** Output: 1, 2
+  * Input: 2
+  * Output: 1, 2
 
 
 * Replace numbers divisible by 3 with "ping"
 
-** Input: 3
-** Output: 1, 2, ping
+  * Input: 3
+  * Output: 1, 2, ping
 
 * Replace numbers divisible by 5 with "pong"
 
-** Input: 10
-** Output: 1, 2, ping, 4, pong, ping, 7, 8, ping, pong
+  * Input: 10
+  * Output: 1, 2, ping, 4, pong, ping, 7, 8, ping, pong
 
-* Replace numbers divisible by 15 with "pingpong" 
+* Replace numbers divisible by 15 with "pingpong"
 
-** Input: 16
-** Output: 1, 2, ping, 4, pong, ping, 7, 8, ping, pong, 11, ping, 13, 14, ping-pong, 16
+  * Input: 16
+  * Output: 1, 2, ping, 4, pong, ping, 7, 8, ping, pong, 11, ping, 13, 14, ping-pong, 16
 
 
 
