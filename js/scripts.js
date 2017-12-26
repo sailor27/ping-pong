@@ -1,18 +1,8 @@
 //business logic
 var countedNumbers = [];
 
-var countNumber = function(number) {
-  for (var index = 1; index <= number; index += 1) {
-      if (index % 15 === 0){
-        countedNumbers.push("ping-pong");
-      } else if (index % 5 === 0){
-        countedNumbers.push("pong");
-      } else if (index % 3 === 0){
-        countedNumbers.push("ping");
-      } else {
-        countedNumbers.push(index);
-      }
-    }
+var countNumber = function(Number) {
+
 };
 //front end logic
 $(document).ready(function() {
