@@ -1,7 +1,11 @@
 //business logic
-var countedNumbers = [];
 
-var countNumber = function(number) {
+function Calculator(skinName) {
+  this.skin = skinName;
+}
+
+Calculator.prototype.pingPong = function(number){
+	var countedNumbers = [];
 	for (var i = 1; i <= number; i++){
 		if (i % 15 === 0){
 			countedNumbers.push("ping-pong");
@@ -9,14 +13,15 @@ var countNumber = function(number) {
 			countedNumbers.push("pong");
 		} else if (i % 3 === 0){
 			countedNumbers.push("ping");
- 		} else if (number <= 0){
-			countedNumbers.push("!");
 		} else {
 			countedNumbers.push(i);
 		}
-	} //end for loop started on 5
+	} //end for loop
+}
 
-};
+// var countNumber = function(number) {
+//
+// };
 //front end logic
 $(document).ready(function() {
   $("form#blank").submit(function() {
@@ -26,8 +31,8 @@ $(document).ready(function() {
 			countedNumbers.push(number);
 			$("#not").text("please enter a number greater than 0 to activate ping-pong");
 		};
-    countNumber(number);
-
+		var classicCalculator= new Calculator("classic");
+		var countedNumbers = classicCalculator.pingPong(number);
 		console.log(countedNumbers);
     countedNumbers.forEach(function(number) {
       $("#output").append("<li>" + number + "</li>");

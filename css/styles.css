@@ -30,3 +30,7 @@ label {
   color: #730099;
   background-color: #f2ccff;
 }
+
+ul{
+	list-style: none;
+}
