@@ -9,6 +9,8 @@ var countNumber = function(number) {
 			countedNumbers.push("pong");
 		} else if (i % 3 === 0){
 			countedNumbers.push("ping");
+ 		} else if (number <= 0){
+			countedNumbers.push("!");
 		} else {
 			countedNumbers.push(i);
 		}
@@ -20,14 +22,13 @@ $(document).ready(function() {
   $("form#blank").submit(function() {
     event.preventDefault();
     var number = $("input#number").val();
-		console.log(number);
-    if (isNaN(number) === true) {
-      $("#not").text("please enter a number u fool");
-    };
-
+		if (number <= 0){
+			countedNumbers.push(number);
+			$("#not").text("please enter a number greater than 0 to activate ping-pong");
+		};
     countNumber(number);
-		console.log(countedNumbers);
 
+		console.log(countedNumbers);
     countedNumbers.forEach(function(number) {
       $("#output").append("<li>" + number + "</li>");
     });
