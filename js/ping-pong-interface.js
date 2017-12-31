@@ -5,9 +5,9 @@ $(document).ready(function() {
     event.preventDefault();
     var number = $("input#number").val();
 		if (number <= 0){
-			countedNumbers.push(number);
 			$("#not").text("please enter a number greater than 0 to activate ping-pong");
 		};
+
 		var classicCalculator= new Calculator("classic");
 		var countedNumbers = classicCalculator.pingPong(number);
 		console.log(countedNumbers);

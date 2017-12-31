@@ -17,5 +17,6 @@ Calculator.prototype.pingPong = function(number){
 			countedNumbers.push(i);
 		}
 	} //end for loop
+	return countedNumbers;
 }
 exports.calculatorModule = Calculator;
